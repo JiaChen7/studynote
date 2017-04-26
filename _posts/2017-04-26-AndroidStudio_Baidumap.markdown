@@ -3,7 +3,7 @@ layout: post
 title:  "Android Studio下使用百度地图"
 date:   2017-04-26 20:43:59
 author: Jia Chen
-categories: Android Studio
+categories: Android_Studio
 tags:	AS BaiduMap
 cover:  "/assets/instacode.png"
 ---
