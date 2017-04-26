@@ -22,7 +22,7 @@ cover:  "/assets/baidu_map.jpg"
 
 新建一个CampusLife项目，包名为com.example.jc.campuslife。名字可自行定义。因为我们的工程和校园生活有关，所以起了这个名字。在开始编码之前需要将百度地图Android SDK准备好，[在这里下载SDK][downloadAPI]。可根据所需功能来选择相应的开发包。
 下载完成后进行解压，将jar文件复制到项目的app/libs目录下，然后在src/main目录下新建一个jniLibs目录,将解压缩后的so动态库放入这个目录中。
-<img src="{{ site.baseurl }}/assets/addsdk.JPG" title="Profile Picture" class="profile">
+<img src="{{ site.baseurl }}/assets/addsdk.png" title="Profile Picture" class="profile">
 
 ### Code Snippets
 
