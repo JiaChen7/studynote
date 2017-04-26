@@ -1,0 +1,56 @@
+<p>去年参加超图比赛时做了安卓端的地图应用，到现在已经大半年了。这段时间刚好又要做安卓端的地图开发，就随着进度梳理一下简单的安卓端开发。我是在macOS上用Android Studio写的，和Windows差别不大（不得不表扬一下Android Studio，能在不同平台间完美切换）。</p>
+
+<h2 id="使用百度地图">使用百度地图</h2>
+
+<p>选择百度地图是因为使用的人比较多，且相关的教程资料较多，比较容易有上手，但其实不同地图API的使用差别不大，可以根据需求选择，这里以百度地图为例。</p>
+
+<h3 id="申请密钥">申请密钥</h3>
+
+<p>利用百度地图进行开发时需要申请密钥，一个App对应一个密钥。<a href="http://lbsyun.baidu.com/index.php?title=androidsdk/guide/key">百度地图开放平台</a>中有详细的申请方法,这里不再赘述。</p>
+
+<h3 id="配置环境">配置环境</h3>
+
+<p>新建一个CampusLife项目，包名为com.example.jc.campuslife。名字可自行定义。因为我们的工程和校园生活有关，所以起了这个名字。在开始编码之前需要将百度地图Android SDK准备好，<a href="http://lbsyun.baidu.com/sdk/download?selected=mapsdk_basicmap,mapsdk_searchfunction,mapsdk_lbscloudsearch,mapsdk_calculationtool,mapsdk_radar">在这里下载SDK</a>。可根据所需功能来选择相应的开发包。
+下载完成后进行解压，将jar文件复制到项目的app/libs目录下，然后在src/main目录下新建一个jniLibs目录,将解压缩后的so动态库放入这个目录中。
+<img src="/assets/addsdk.jpg" alt="文件目录" /></p>
+
+<h3 id="code-snippets">Code Snippets</h3>
+
+<p>You can use <a href="https://highlightjs.org/">highlight.js</a> to add syntax highlight code snippets:</p>
+
+<p>Use the <a href="https://github.com/Shopify/liquid/wiki/Liquid-for-Designers">Liquid</a> <code class="highlighter-rouge"><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">highlight</span><span class="w"> </span><span class="err">&lt;language&gt;</span><span class="w"> </span><span class="err">%</span><span class="p">}</span></code> tag to add syntax highlighting to code snippets.</p>
+
+<p>For instance, this template…</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">{% highlight javascript %}    
+function demo(string, times) {    
+  for (var i = 0; i <span class="nt">&lt; times</span><span class="err">;</span> <span class="na">i</span><span class="err">++)</span> <span class="err">{</span>    
+    <span class="na">console</span><span class="err">.</span><span class="na">log</span><span class="err">(</span><span class="na">string</span><span class="err">);</span>    
+  <span class="err">}</span>    
+<span class="err">}</span>    
+<span class="na">demo</span><span class="err">("</span><span class="na">hello</span><span class="err">,</span> <span class="na">world</span><span class="err">!",</span> <span class="na">10</span><span class="err">);</span>
+<span class="err">{%</span> <span class="na">endhighlight</span> <span class="err">%}</span></code></pre></figure>
+
+<p>…will come out looking like this:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">demo</span><span class="p">(</span><span class="nx">string</span><span class="p">,</span> <span class="nx">times</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">times</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">string</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="nx">demo</span><span class="p">(</span><span class="s2">"hello, world!"</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span></code></pre></figure>
+
+<p>Syntax highlighting is done using <a href="https://highlightjs.org/">highlight.js</a>. You can change the active theme in <a href="https://github.com/bencentra/centrarium/blob/2dcd73d09e104c3798202b0e14c1db9fa6e77bc7/_includes/head.html#L15">head.html</a>.</p>
+
+<h3 id="images">Images</h3>
+
+<p>Lightbox has been enabled for images. To create the link that’ll launch the lightbox, add <code>data-lightbox</code> and <code>data-title</code> attributes to an <code>&lt;a&gt;</code> tag around your <code>&lt;img&gt;</code> tag. The result is:</p>
+
+<p><a href="//bencentra.com/assets/images/falcon9_large.jpg" data-lightbox="falcon9-large" data-title="Check out the Falcon 9 from SpaceX">
+  <img src="//bencentra.com/assets/images/falcon9_small.jpg" title="Check out the Falcon 9 from SpaceX" />
+</a></p>
+
+<p>For more information, check out the <a href="http://lokeshdhakar.com/projects/lightbox2/">Lightbox</a> website.</p>
+
+<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://github.com/jekyll/jekyll-help">Jekyll’s dedicated Help repository</a>.</p>
+

@@ -8,19 +8,21 @@ tags:	AS BaiduMap
 cover:  "/assets/baidu_map.jpg"
 ---
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+去年参加超图比赛时做了安卓端的地图应用，到现在已经大半年了。这段时间刚好又要做安卓端的地图开发，就随着进度梳理一下简单的安卓端开发。我是在macOS上用Android Studio写的，和Windows差别不大（不得不表扬一下Android Studio，能在不同平台间完美切换）。
 
-## Adding New Posts
+## 使用百度地图
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+选择百度地图是因为使用的人比较多，且相关的教程资料较多，比较容易有上手，但其实不同地图API的使用差别不大，可以根据需求选择，这里以百度地图为例。
 
-### Tags and Categories
+### 申请密钥
 
-If you list one or more categories or tags in the front matter of your post, they will be included with the post on the page as links. Clicking the link will bring you to an auto-generated archive page for the category or tag, created using the [jekyll-archive][jekyll-archive] gem.
+利用百度地图进行开发时需要申请密钥，一个App对应一个密钥。[百度地图开放平台][BaiduAPI]中有详细的申请方法,这里不再赘述。
 
-### Cover Images
+### 配置环境
 
-To add a cover image to your post, set the "cover" property in the front matter with the relative URL of the image (i.e. <code>cover: "/assets/cover_image.jpg"</code>).
+新建一个CampusLife项目，包名为com.example.jc.campuslife。名字可自行定义。因为我们的工程和校园生活有关，所以起了这个名字。在开始编码之前需要将百度地图Android SDK准备好，[在这里下载SDK][downloadAPI]。可根据所需功能来选择相应的开发包。
+下载完成后进行解压，将jar文件复制到项目的app/libs目录下，然后在src/main目录下新建一个jniLibs目录,将解压缩后的so动态库放入这个目录中。
+![文件目录](/assets/addsdk.jpg)
 
 ### Code Snippets
 
@@ -65,6 +67,8 @@ For more information, check out the [Lightbox][lightbox] website.
 
 Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
 
+[BaiduAPI]:    http://lbsyun.baidu.com/index.php?title=androidsdk/guide/key
+[downloadAPI]: http://lbsyun.baidu.com/sdk/download?selected=mapsdk_basicmap,mapsdk_searchfunction,mapsdk_lbscloudsearch,mapsdk_calculationtool,mapsdk_radar
 [jekyll]:      http://jekyllrb.com
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-help]: https://github.com/jekyll/jekyll-help
