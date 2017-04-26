@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: About Me
+permalink: /about me/
 ---
 
 <img src="{{ site.baseurl }}/assets/myphoto.JPG" title="Profile Picture" class="profile">
