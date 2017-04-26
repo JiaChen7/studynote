@@ -10,16 +10,16 @@ exclude:
 
 # Site settings
 title: JC’s Study Note
-subtitle: "A simple yet classy theme for your Jekyll website or blog"
-email: blcentra@gmail.com
-name: Ben Centra
+subtitle: “This is JC’s study note. Just write down something important in learning.”
+email: jiachen_07@163.com
+name: Jia Chen
 description: >
-  A simple yet classy theme for your Jekyll website or blog.
+  This is JC’s study note. Just write down something important in learning.
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
 baseurl: “/studynote” # the subpath of your site, e.g. /blog/
-url: "http://bencentra.github.io" # the base hostname & protocol for your site
+url: "https://jiachen7.github.io" # the base hostname & protocol for your site
 cover: "/assets/header_image.jpg"
 logo: "/assets/logo.png"
 
