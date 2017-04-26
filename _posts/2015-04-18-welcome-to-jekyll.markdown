@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2015-04-18 08:43:59
-author: Ben Centra
-categories: Jekyll
-tags:	jekyll welcome
+title:  "Android Studio下使用百度地图"
+date:   2017-04-26 20:43:59
+author: Jia Chen
+categories: Android Studio
+tags:	AS BaiduMap
 cover:  "/assets/instacode.png"
 ---
 
