@@ -10,5 +10,5 @@ permalink: /about me/
 
 非专业程序员，但是在平时的学习生活中常涉及编程、开发、数据处理、空间分析的内容。在很多大牛的博客上收获了很多，也希望自己可以及时记录，静下心来将所学梳理成文字。
 
-这个博客的搭建使用了**GitHub Pages**, **Jekyll**, **Markdown**, 使用了 Ben Centra的jekyll theme, 简化了搭建的过程，感谢！
+这个博客的搭建使用了**GitHub Pages**, **Jekyll**, **Markdown**, 使用了Ben Centra的jekyll theme, 简化了搭建的过程，感谢！
 
